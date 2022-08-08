@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@500&display=swap');
+
+:root {
+  --bg-color: #2874f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f6;
+}
+
+nav {
+  height: 60px;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+}
+
+nav img.logo {
+  width: 90px;
+  height: 25px;
+  border: 2px solid transparent;
+  margin-left: 200px;
+}
+
+nav img.logo:hover {
+  width: 94px;
+  border: none;
+}
+
+.search {
+  width: 435px;
+  height: 35px;
+  margin: 0 20px;
+  padding: 0 14px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  right: 742px;
+  cursor: pointer;
+}
+
+.btn-img {
+  height: 31px;
+  position: relative;
+  top: 2px;
+}
+
+#login {
+  background-color: white;
+  color: var(--bg-color);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 31px;
+  margin: 0 42px;
+}
+
+#login:hover {
+  transform: translateY(-1.01px);
+}
+
+.become-seller {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0 47px 0 11px;
+  padding: 8px 4px;
+  border: 2px solid transparent;
+}
+
+.become-seller:hover {
+  border: 2px solid white;
+}
+
+.more {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0 47px 0 11px;
+}
+
+.more img {
+  display: inline-block;
+  width: 8px;
+  position: relative;
+  bottom: 2px;
+  transform: rotate(0deg);
+}
+
+.more:hover img {
+  transform: rotate(180deg);
+}
+
+.cart {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  border: 2px solid transparent;
+}
+
+.cart:hover {
+  border: 2px solid white;
+}
+
+.cart img {
+  width: 16px;
+  position: relative;
+  top: 8px;
+}
+
+.cart span {
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 6px;
+}
+
+main {
+  min-height: calc(100vh - 60px - 12vh);
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background-color: white;
+  box-shadow: 0 1px 1px rgb(208, 203, 203);
+}
+
+.box div div:hover {
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.head img {
+  width: 60px;
+}
+
+.category {
+  margin: 14px 40px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+  width: 78vw;
+  height: 45vh;
+  margin: auto;
+  margin-top: 13px;
+}
+
+.banner-image {
+  width: 78vw;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.arrow {
+  width: 32px;
+  height: 16px;
+  background-color: white;
+  padding: 14px 33px;
+  position: absolute;
+  box-shadow: 0 0px 1px inset;
+}
+
+.right-arrow {
+  transform: rotate(270deg);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.left-arrow {
+  transform: rotate(90deg);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#arrow-1 {
+  left: 90px;
+  top: 331px;
+}
+
+#arrow-2 {
+  top: 331px;
+  right: 89px;
+}
+
+#arrow-3 {
+  top: 700px;
+  right: -16px;
+  cursor: pointer;
+}
+
+#arrow-4 {
+  top: 1100px;
+  right: -16px;
+  cursor: pointer;
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
+hr {
+  background-color: rgb(208, 203, 203);
+  border: none;
+  height: 1.2px;
+  box-shadow: 0px 0px 5px rgb(208, 203, 203);
+}
+
+.block {
+  background-color: white;
+  margin: 0 10px;
+  box-shadow: 0px 0px 2px rgb(208, 203, 203);
+}
+
+.products-head {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #212121;
+  margin: 15px 30px;
+}
+
+.row {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.row img {
+  margin: 10px 0;
+}
+
+.item {
+  padding: 0 30px 50px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+}
+
+.item:hover.item img {
+  transform: scale(1.03);
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.item span {
+  color: green;
+}
+
+footer {
+  background-color: var(--bg-color);
+  color: white;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+}
