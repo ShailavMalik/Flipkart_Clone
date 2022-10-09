@@ -13,18 +13,30 @@
 </head>
 
 <body>
-
   <header>
     <nav>
-      <img class="logo"
-        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-        alt="logo" />
-      <input class="search" type="text" placeholder="Seach for products, brands and more" />
-      <button class="btn" type="button">
-        <img class="btn-img"
-          src="https://www.citypng.com/public/uploads/small/11640084027eqwauegwzmhrbniaualprqoe4jj2jguwobj2t6vnixim3yf2w8xzbb5jdksvrcemxwzv9ncnqzadnjtmwf6eqpadmrmarzhefgxf.png"
-          alt="search" />
-      </button>
+      <div class="initial-nav"></div>
+
+      <div class="main-nav">
+        <div class="plus">
+          <img class="logo"
+            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+            alt="logo" />
+          <div class="plus-text">
+            <a href="#">Explore <span>Plus</span></a>
+            <img src="Img\plus_aef861.png" alt="">
+          </div>
+        </div>
+        <div class="search-bar">
+          <input class="search" type="text" placeholder="Seach for products, brands and more" />
+
+          <button class="btn" type="button">
+            <img class="btn-img"
+              src="https://www.citypng.com/public/uploads/small/11640084027eqwauegwzmhrbniaualprqoe4jj2jguwobj2t6vnixim3yf2w8xzbb5jdksvrcemxwzv9ncnqzadnjtmwf6eqpadmrmarzhefgxf.png"
+              alt="search" />
+          </button>
+        </div>
+      </div>
       <button type="button" id="login">Login</button>
       <button type="button" class="become-seller">Become a Seller</button>
       <button type="button" class="more"> More <img src="Img/arrow.png" alt=""> </button>
@@ -34,12 +46,14 @@
           alt="" />
         <span>Cart</span>
       </button>
+      <div class="last-nav"></div>
     </nav>
   </header>
 
   <main>
     <div class="box">
       <div class="head">
+        <div class="initial-head"></div>
         <div class="category">
           <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0cbdf75060e1a919.png?q=100" alt="">
           <br>
@@ -85,12 +99,42 @@
           <br>
           Grocessory
         </div>
+        <div class="last-head"></div>
       </div>
     </div>
+
     <div class="banner">
-      <img class="arrow left-arrow" id="arrow-1" src="Img/side-arrow.png" alt="">
-      <img class="banner-image" src="Img\laptops.jpg" alt="" />
-      <img class="arrow right-arrow " id="arrow-2" src="Img/side-arrow.png" alt="">
+      <div class="arrow left-arrow" id="arrow-1"><svg width="14.6" height="24" viewBox="0 0 16 27"
+          xmlns="http://www.w3.org/2000/svg" class="_1xtBwk">
+          <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="_23HYg_">
+          </path>
+        </svg></div>
+      <!-- <img class="banner-image" src="Img\laptops.jpg" alt="" /> -->
+
+      <div class="bannerImg1">
+      </div>
+
+      <div class="bannerImg2">
+      </div>
+
+      <div class="bannerImg3">
+      </div>
+
+      <div class="bannerImg4">
+      </div>
+
+      <div class="bannerImg5">
+      </div>
+
+
+      <div class="arrow right-arrow" id="arrow-2"><svg width="14.6" height="27" viewBox="0 0 16 27"
+          xmlns="http://www.w3.org/2000/svg" class="_2-wzdc">
+          <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="FXox6K"></path>
+        </svg></div>
+    </div>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <div class="add">
+      <img src="Img/wide.jpg" class="add">
     </div>
     <div class="block">
       <hr>
@@ -145,8 +189,13 @@
           <br>
           <span>Up to 60% Off</span>
         </div>
-        <img class="arrow right-arrow" id="arrow-3" src="Img/side-arrow.png" alt="">
+        <div class="arrow right-arrow" id="arrow-4"><svg width="14.6" height="27" viewBox="0 0 16 27"
+            xmlns="http://www.w3.org/2000/svg" class="_2-wzdc">
+            <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="FXox6K">
+            </path>
+          </svg></div>
       </div>
+    </div>
     </div>
     <div class="block">
       <hr>
@@ -209,13 +258,17 @@
           <br>
           <span>From ₹299</span>
         </div>
+        <div class="arrow right-arrow" id="arrow-6"><svg width="14.6" height="27" viewBox="0 0 16 27"
+            xmlns="http://www.w3.org/2000/svg" class="_2-wzdc">
+            <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="FXox6K">
+            </path>
+          </svg></div>
       </div>
-      <img class="arrow right-arrow" id="arrow-4" src="Img/side-arrow.png" alt="">
     </div>
   </main>
 
   <footer>&copy; Flipkart.com</footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

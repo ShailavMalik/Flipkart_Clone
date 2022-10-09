@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 :root {
   --bg-color: #2874f0;
@@ -11,30 +12,75 @@ body {
 }
 
 nav {
-  height: 60px;
+  height: 56px;
   background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.initial-nav,
+.last-nav {
+  width: 2vw;
+}
+
+.plus {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.plus-text {
+  margin-top: -1px;
+  margin-left: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 11px;
+  color: white;
+}
+
+.plus a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.plus-text:hover {
+  text-decoration: underline;
+}
+
+.plus span {
+  color: #ffe500;
+  font-weight: 600;
+}
+
+.plus img {
+  width: 10px;
+}
+
+.main-nav {
   display: flex;
   align-items: center;
 }
 
 nav img.logo {
-  width: 90px;
-  height: 25px;
+  width: 75px;
+  height: 20px;
   border: 2px solid transparent;
-  margin-left: 200px;
 }
 
-nav img.logo:hover {
-  width: 94px;
-  border: none;
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .search {
-  width: 435px;
-  height: 35px;
-  margin: 0 20px;
+  width: 25vw;
+  height: 36px;
+  min-width: 220px;
   padding: 0 14px;
-  border-radius: 4px;
   border: none;
 }
 
@@ -43,35 +89,38 @@ nav img.logo:hover {
 }
 
 .btn {
-  background-color: transparent;
-  position: absolute;
+  background-color: white;
+  height: 36px;
   border: none;
   border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  right: 742px;
   cursor: pointer;
 }
 
 .btn-img {
-  height: 31px;
+  height: 23px;
   position: relative;
   top: 2px;
+
 }
 
 #login {
   background-color: white;
   color: var(--bg-color);
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   border: none;
   border-radius: 2px;
-  padding: 6px 31px;
-  margin: 0 42px;
+  padding: 0.4em 1.5em;
 }
 
 #login:hover {
-  transform: translateY(-1.01px);
+  transform: translateY(-1.001px);
+}
+
+#login:active {
+  opacity: 0.9;
 }
 
 .become-seller {
@@ -79,8 +128,7 @@ nav img.logo:hover {
   border: none;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  margin: 0 47px 0 11px;
+  font-size: 1rem;
   padding: 8px 4px;
   border: 2px solid transparent;
 }
@@ -89,13 +137,16 @@ nav img.logo:hover {
   border: 2px solid white;
 }
 
+.become-seller:active {
+  opacity: 0.8;
+}
+
 .more {
   background-color: transparent;
   border: none;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  margin: 0 47px 0 11px;
+  font-size: 1rem;
 }
 
 .more img {
@@ -115,10 +166,15 @@ nav img.logo:hover {
   border: none;
   display: flex;
   border: 2px solid transparent;
+  font-size: 1rem;
 }
 
 .cart:hover {
   border: 2px solid white;
+}
+
+.cart:active {
+  opacity: 0.8;
 }
 
 .cart img {
@@ -129,7 +185,7 @@ nav img.logo:hover {
 
 .cart span {
   color: white;
-  font-size: 16px;
+  font-size: inherit;
   font-family: 'Roboto', sans-serif;
   padding: 6px;
 }
@@ -143,6 +199,7 @@ main {
 .box {
   background-color: white;
   box-shadow: 0 1px 1px rgb(208, 203, 203);
+  /* overflow: scroll; */
 }
 
 .box div div:hover {
@@ -150,100 +207,181 @@ main {
   cursor: pointer;
 }
 
+
 .head {
   display: flex;
-  justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  justify-content: space-between;
+}
 
+.initial-head,
+.last-head {
+  width: 4vw;
 }
 
 .head img {
-  width: 60px;
+  width: 5vw;
 }
 
 .category {
-  margin: 14px 40px;
+  margin: 14px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
 }
 
 .banner {
-  width: 78vw;
-  height: 45vh;
-  margin: auto;
-  margin-top: 13px;
-}
-
-.banner-image {
-  width: 78vw;
-  height: 45vh;
-  object-fit: cover;
-}
-
-.arrow {
-  width: 32px;
-  height: 16px;
-  background-color: white;
-  padding: 14px 33px;
-  position: absolute;
-  box-shadow: 0 0px 1px inset;
-}
-
-.right-arrow {
-  transform: rotate(270deg);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.left-arrow {
-  transform: rotate(90deg);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-#arrow-1 {
-  left: 90px;
-  top: 331px;
-}
-
-#arrow-2 {
-  top: 331px;
-  right: 89px;
-}
-
-#arrow-3 {
-  top: 700px;
-  right: -16px;
-  cursor: pointer;
-}
-
-#arrow-4 {
-  top: 1100px;
-  right: -16px;
-  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  box-sizing: border-box;
 }
 
 .banner:hover {
   cursor: pointer;
 }
 
+/* .banner-image {
+  width: calc(100% - 16px);
+  display: block;
+  margin: auto;
+  text-align: center;
+  height: 20em;
+  padding: 0;
+  object-fit: cover;
+} */
+
+.bannerImg1,
+.bannerImg2,
+.bannerImg3,
+.bannerImg4,
+.bannerImg5 {
+    /* width: calc(100% - 16px); */
+    width: calc(100%);
+   /* right:0; */
+    /* left:0; */
+    margin:0 auto;
+    background-size: cover;
+    background-position: center;
+    transition: right 1s;
+    cursor: pointer;
+    height: 20em;
+    position: absolute;
+}
+
+.bannerImg1 {
+  background-image: url("/Flipkart_Clone/Img/clothes.jpg"); 
+  /* background-color: red; */
+  /* display: block; */
+}
+
+
+.bannerImg2
+{
+  background-image: url("/Flipkart_clone/Img/headphones.jpg");
+  /* height: 20em; */
+}
+
+.bannerImg3
+{
+  background-image: url("/Flipkart_clone/Img/iphone.jpg");
+  /* height: 20em; */
+}
+
+.bannerImg4
+{
+  background-image: url("/Flipkart_clone/Img/laptops.jpg");
+  /* height: 20em; */
+}
+
+.bannerImg5
+{
+  background-image: url("/Flipkart_clone/Img/powerbank.jpg");
+  /* height: 20em; */
+}
+
+.banner-image:active {
+  opacity: 0.9;
+}
+
+.arrow {
+  width: 3.3em;
+  height: 6.5em;
+  background-color: white;
+  position: absolute;
+  top:100px;
+  /* bottom: 0; */
+  /* margin: auto 0; */
+  box-shadow: 0 0px 1px inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.arrow:active {
+  opacity: 0.7;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
+
+#arrow-1 {
+  left: 8px;
+
+}
+
+#arrow-2 {
+  right: 8px;
+}
+
+#arrow-3,
+#arrow-5 {
+  left: -20px;
+}
+
+#arrow-4,
+#arrow-6 {
+  right: -20px;
+
+}
+
+.add {
+  width: calc(100% - 16px);
+  color: green;
+  height: 110px;
+  display: block;
+  margin: auto;
+  margin-top: 345px;
+  background-color: white;
+}
+
+.add img {
+  width: calc(100% - 300px);
+
+}
+
 hr {
   background-color: rgb(208, 203, 203);
   border: none;
   height: 1.2px;
+  margin: 0;
   box-shadow: 0px 0px 5px rgb(208, 203, 203);
 }
 
 .block {
   background-color: white;
-  margin: 0 10px;
+  margin: 9px 0.5rem;
   box-shadow: 0px 0px 2px rgb(208, 203, 203);
+  /* overflow: scroll; */
+  overflow: hidden;
 }
 
 .products-head {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: #212121;
@@ -251,20 +389,20 @@ hr {
 }
 
 .row {
-  width: 95vw;
+  width: calc(100% - 40px);
+  position: relative;
   margin: auto;
   display: flex;
-  justify-content: flex-start;
 }
 
 .row img {
-  margin: 10px 0;
+  margin: 0.7em 0;
+  height: 13em;
 }
 
 .item {
-  padding: 0 30px 50px;
-  overflow: hidden;
-  line-height: 25px;
+  padding: 0 1.5em 3.1em;
+  line-height: 1.53em;
   text-align: center;
 }
 
@@ -274,6 +412,10 @@ hr {
 
 .item:hover {
   cursor: pointer;
+}
+
+.item:active {
+  opacity: 0.9;
 }
 
 .item span {
@@ -289,3 +431,37 @@ footer {
   align-items: center;
   font-family: "Merriweather", serif;
 }
+
+@media screen and (min-width:901px) {
+  .search {
+    min-width: 220px;
+  }
+
+  .head img {
+    max-width: 64px;
+    min-width: 52px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  nav img.logo {
+    width: 65px;
+  }
+
+  .search {
+    width: 23vw;
+    height: 32px;
+  }
+
+  .btn {
+    height: 32px;
+  }
+
+}
+
+/* * different design */
+@media screen and (max-width:900px) {}
